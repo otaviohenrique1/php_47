@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . 'funcoes.php';
+require_once __DIR__ . '/funcoes.php';
 
 echo "Bem-vindo(a) ao screen match!" . PHP_EOL;
 
@@ -105,3 +105,8 @@ var_dump($filme['nome']);
 $posicaoDoisPontos = strpos($filme['nome'], ':');
 var_dump($posicaoDoisPontos);
 var_dump(substr($filme['nome'], 0, $posicaoDoisPontos));
+
+$filmeComoStringJson = json_encode($filme);
+echo $filmeComoStringJson;
+// var_dump(json_decode($filmeComoStringJson, true));
+file_put_contents(__DIR__ . '/filme.json', $filmeComoStringJson);
