@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/funcoes.php';
+require_once __DIR__ . '/src/funcoes.php';
+
+// php index.php 10 5 6 8 9.5
 
 echo "Bem-vindo(a) ao screen match!" . PHP_EOL;
 
